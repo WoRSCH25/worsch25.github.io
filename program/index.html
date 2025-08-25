@@ -436,7 +436,27 @@
         <p>From Erdős–Rényi graphs to Linial-Meshulam complexes via the multineighbor construction</p>
             Neighborhood complexes, introduced by Lovász in his proof of the Kneser conjecture, have long served as a bridge between combinatorics and algebraic topology. The m-neighbor complex N<sub>m</sub>(G) generalizes this construction: its simplices are vertex sets in a graph G that share at least m common neighbors. In this talk, we investigate N<sub>m</sub>(G(n, p)) for an Erdős–Rényi random graph G(n, p) and identify parameter regimes in which the complex almost surely exhibits a sharply concentrated dimension. Under explicit growth conditions on m and p, the random complex has a complete (t−2)-skeleton, no t-faces, and (t−1)-faces whose marginal probabilities match those of a Linial– Meshulam (t−1)-complex Y<sub>n,t−1,q</sub>. We give precise formulas for t and q, prove concentration bounds that force the dimension lock, and compare the resulting distribution with the independent-face Linial–Meshulam model. Our proofs rely on binomial tail estimates calibrated to the m-neighbor threshold and union bounds over candidate faces. We also interpret N<sub>m</sub>(G) as a Dowker complex of the vertex–neighbor incidence relation, suggesting potential applications to topological data analysis. The presentation will outline the motivation from both topological combinatorics and random complex theory, state the main theorems, sketch the probabilistic arguments, and highlight examples illustrating the sharp transition in dimension.
     </li>
-    <li><h4>Caterina De Bacco:</h4> </li>
+    <li><h4>Caterina De Bacco:</h4> 
+        <p>Broad Spectrum Structure Discovery in Large-Scale Higher-Order Networks</p>
+            Like traditional networks, real-world hypergraphs exhibit mesoscale structure, patterns of interaction among groups of nodes. 
+            Broadly, modeling such structure reduces to clustering nodes into groups and characterizing how those groups interact, if at all. In doing so, one reduces the conceptual complexity of the system and the dimensionality of the data, potentially revealing real functional components and underlying mechanisms that drive observed interactions.<br><br>
+           
+            Mesoscale structure comes in many different forms, not all of which are tractably modeled. Perhaps the most commonly modeled structure is assortative structure wherein nodes form “communities” and interact mostly with other similar nodes within the same community. Recent work develops methods for efficient detection of these communities in hypergraph data, which will be discussed in the talk.<br><br>
+
+            However, many complex systems also exhibit some degree of disassortative structure, wherein similar nodes form “classes”, but may not interact within these classes. Within these classes, nodes have similar characteristics, but may (exclusively) interact with nodes in other classes. 
+            Even in traditional network settings, any degree of disassortativity is generally difficult to model. This challenge stems from the baseline complexity required to model both how nodes form groups and how these combinations of groups interact. 
+            For hypergraphs, this complexity compounds: higher-order interactions among nodes introduce higher-order interactions within and between groups, resulting in a combinatoric explosion in the number of model parameters that makes estimation impossible.<br><br>
+
+            In this talk I will present a family of probabilistic generative models to tractably capture a wide range of mesoscale structure underlying
+            large-scale hypergraphs, ranging from strictly assortative to highly disassortative.
+            The key insight enabling this approach is to treat classes of similar units as themselves nodes in a latent hypergraph. 
+            By modeling observed node interactions through latent interactions among classes using low-rank representations, this approach tractably
+            captures rich structural patterns while ensuring model identifiability. <br><br>
+
+            I will present empirical results on real hypergraph data that shows how this approach improves link prediction tasks and discovers interpretable structures in various systems, including a case study on drug interactions data.
+            Finally, I will discuss some open challenges and questions.
+    </li>
+    
     </ul> 
 </body>
 </html>
